@@ -95,7 +95,6 @@ button:focus-visible {
   }
 } */
 
-/* 既存のスタイルを少し変更します */
 body {
   margin: 0;
   display: flex;
@@ -110,8 +109,8 @@ body {
 #app {
   text-align: center;
   width: 100%;
-  max-width: 600px; /* 横幅を制限 */
-  margin: 0 20px; /* スマホでも中央に表示されるように少し余白を追加 */
+  max-width: 600px;
+  margin: 0 20px;
 }
 
 h1 {
@@ -140,6 +139,30 @@ button {
 
 button:hover {
   background-color: #535bf2;
+}
+
+#weapon-list {
+  display: flex;
+  flex-wrap: wrap;  /* 横並びで4つまで、超えたら次の行へ */
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#weapon-list label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  flex: 0 0 22%;  /* 1行あたり最大4つ */
+  text-align: center;
+  box-sizing: border-box; /* パディングを含めて幅を調整 */
+}
+
+#weapon-list img {
+  max-width: 100px;
+  height: auto;
+  margin-top: 10px;
 }
 
 #weapon-images {

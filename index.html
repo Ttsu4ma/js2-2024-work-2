@@ -1,13 +1,28 @@
-<!-- <!doctype html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>モンハンワイルズ武器ランダム決定</title>
+    <link rel="icon" href="/vite.svg" type="image/svg+xml" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>モンハン武器ランダム決定</h1>
+      <div class="card">
+        <button id="weapon" type="button">武器を決める</button>
+        <div id="weapon-images">
+          <div id="weapon1">
+            <p id="weapon1-name"></p>
+            <img id="weapon1-img" src="" alt="" />
+          </div>
+          <div id="weapon2">
+            <p id="weapon2-name"></p>
+            <img id="weapon2-img" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html> -->
@@ -24,7 +39,15 @@
     <div id="app">
       <h1>モンハン武器ランダム決定</h1>
       <div class="card">
+        <p>武器を選択してください:</p>
+        
+        <!-- 武器選択リスト -->
+        <div id="weapon-list">
+          <!-- JavaScriptで武器一覧を表示 -->
+        </div>
+
         <button id="weapon" type="button">武器を決める</button>
+        
         <div id="weapon-images">
           <div id="weapon1">
             <p id="weapon1-name"></p>
